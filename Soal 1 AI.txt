@@ -1,0 +1,79 @@
+Soal 1
+Kasus:
+Seorang petani ingin dibuatkan sistem AI sederhana untuk membantu mengidentifikasi jenis hama tanaman berdasarkan gejala-gejala berikut:
+
+Daun menguning
+
+Terdapat bercak hitam
+
+Daun berlubang
+
+Tanaman layu
+
+Jawaban:
+1. Aturan Logika (Rule-Based)
+Aturan berbasis IF - THEN:
+
+IF daun menguning THEN kemungkinan terkena Hama Kutu Daun.
+
+IF terdapat bercak hitam THEN kemungkinan terkena Jamur Daun.
+
+IF daun berlubang THEN kemungkinan terkena Hama Ulat.
+
+IF tanaman layu THEN kemungkinan terkena Infeksi Bakteri.
+
+Kombinasi gejala:
+
+IF daun menguning AND tanaman layu THEN kemungkinan terkena Virus Tanaman.
+
+2. Representasi Logika Proposisional
+Definisi proposisi:
+
+P1: Daun menguning
+
+P2: Terdapat bercak hitam
+
+P3: Daun berlubang
+
+P4: Tanaman layu
+
+Definisi kesimpulan:
+
+H1: Hama Kutu Daun
+
+H2: Jamur Daun
+
+H3: Hama Ulat
+
+H4: Infeksi Bakteri
+
+H5: Virus Tanaman
+
+Aturan logika:
+
+P1 → H1
+(Jika daun menguning, maka kemungkinan hama kutu daun)
+
+P2 → H2
+(Jika terdapat bercak hitam, maka kemungkinan jamur daun)
+
+P3 → H3
+(Jika daun berlubang, maka kemungkinan hama ulat)
+
+P4 → H4
+(Jika tanaman layu, maka kemungkinan infeksi bakteri)
+
+(P1 ∧ P4) → H5
+(Jika daun menguning dan tanaman layu, maka kemungkinan virus tanaman)
+
+3. Penjelasan Sistem Inferensi
+Input:
+Data gejala tanaman yang diamati oleh petani.
+
+Proses Inferensi:
+Sistem menggunakan metode pencocokan aturan (rule-matching) untuk mendeteksi gejala yang sesuai dengan aturan yang ada.
+Jika ditemukan kecocokan, maka sistem mengeluarkan diagnosa berdasarkan aturan tersebut.
+Teknik inferensinya menggunakan pendekatan forward chaining (mulai dari data menuju kesimpulan).
+
+Output:
+Diagnosa jenis hama atau penyakit berdasarkan gejala yang diamati.
